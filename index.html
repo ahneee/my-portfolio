@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href = "#home" class="nav-logo"><span class="dot"></span>yuina</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Works</a>
+            <a href="#experience">Path</a>
+        </div>
+        <a href="#contact" class="nav-cta">Say Hi</a>
+        <button class="nav-burger" id="burgerBtn" aria-label="Open menu"><span></span></button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#experience">Path</a>
+        <a href="#contact">Say hi</a>
+    </div>
+
+    <!--- MY HEADER SECTION --->
+
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+            <span class="eyebrow">Developer · Tokyo</span>
+            <h1>Akari<br>Yuina<br>Nakada</h1>
+            <p class="sub">Ten years of building for the web, with a brain split evenly between Multimedia Arts and Quantum
+                Engineering — drag the bloom above, it's made of both.</p>
+            <div class="hero-tags">
+                <span class="tag">10 yrs experience</span>
+                <span class="tag">Univ. of Tokyo</span>
+                <span class="tag">art × physics</span>
+            </div>
+        </div>
+        <div class="hero-hint"><span>SCROLL</span><span class="arrow">↓</span></div>
+    </header>
+
+    <!--- MY ABOUT SECTION --->
+    <section id="about" class="about">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="eyebrow">ToolKit</span>
+                <h2>What I Build With</h2>
+            </div>
+            <div class="skills-groups">
+                <div class="skill-card reveal sg-1" data-tilt>
+                    <div class="icon">✦</div>
+                    <h3>Build</h3>
+                    <p>Interfaces, Motion, and the front of the stack</p>
+                    <div class="pill-row">
+                        <span class="pill">HTML</span><span class="pill">CSS / Motion</span><span class="pill">Vanilla JS</span><span
+                            class="pill">React.JS</span><span class="pill">Node.JS</span><span class="pill">Hooks</span><span class="pill">Next.JS</span>
+                            <span class="pill">Redux</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal sg-2" data-tilt>
+                    <div class="icon">◈</div>
+                    <h3>Engineer</h3>
+                    <p>Systems that hold up once people actually use them.</p>
+                    <div class="pill-row">
+                        <span class="pill">C# / .NET Core / .NET Framework</span>
+                        <span class="pill">Python</span><span class="pill">GraphQL</span>
+                        <span class="pill">AWS / GCP</span><span class="pill">CI / CD</span>
+                        <span class="pill">Machine Learning</span><span class="pill">Ai</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal sg-3" data-tilt>
+                    <div class="icon">❀</div>
+                    <h3>Create</h3>
+                    <p>The multimedia arts half, still very much active.</p>
+                    <div class="pill-row">
+                        <span class="pill">Generative Art</span><span class="pill">GLSL Shaders</span><span class="pill">Motion
+                            Design</span><span class="pill">3DCG</span><span class="pill">Digital Art</span>
+                            <span class="pill">Photoshop</span><span class="pill">Clip Studio Paint X</span>
+                            <span class="pill">Autodesk 3ds Max</span><span class="pill">Blender</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal sg-4" data-tilt>
+                    <div class="icon">⚛</div>
+                    <h3>Wonder</h3>
+                    <p>The quantum engineering half, kept alive for fun.</p>
+                    <div class="pill-row">
+                        <span class="pill">Qiskit</span><span class="pill">Linear & Abstract Algebra</span><span
+                            class="pill">Probability</span><span class="pill">Quantum Computing</span>
+                            <span class="pill">Matrix Analysis</span><span class="pill">Quantum Mechanics I & II</span>
+                            <span class="pill">Thermodynamics</span><span class="pill">AMO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--- MY PROJECT SECTION --->
+    <section id="projects" class="projects"> 
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="eyebrow">Selected Work</span>
+                <h2>Things I've Made</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card p1 reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="inner">
+                        <span class="eyebrow">01 · Generative Art</span>
+                        <h3>Photon</h3>
+                        <p>A particle-physics-flavored generative art engine, built for an interactive gallery installation. Crowd movement become the input; light become the output</p>
+                        <div class="project-tags"><span class="pill">WebGl</span><span class="pill">GLSL</span><span class="pill">Three.js</span></div>
+                    </div>
+                </article>
+                <article class="project-card p2 reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="inner">
+                        <span class="eyebrow">02 · education tool</span>
+                        <h3>Superpose</h3>
+                        <p>A Qiskit-powered visualizer that turns quantum circuits into animated, almost-cute diagrams — built so
+                            undergrads stop fearing the bra-ket notation.</p>
+                        <div class="project-tags"><span class="pill">Python</span><span class="pill">Qiskit</span><span
+                                class="pill">D3.js</span></div>
+                    </div>
+                </article>
+                <article class="project-card p3 reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="inner">
+                        <span class="eyebrow">03 · storytelling</span>
+                        <h3>Hanami</h3>
+                        <p>A scroll-driven 3D story site for a museum exhibit — blossoms bloom open as visitors scroll, paced to a
+                            soundtrack that follows their speed.</p>
+                        <div class="project-tags"><span class="pill">Three.js</span><span class="pill">React</span><span
+                                class="pill">Sound Design</span></div>
+                    </div>
+                </article>
+                <article class="project-card p4 reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="inner">
+                        <span class="eyebrow">04 · component library</span>
+                        <h3>Wavefn</h3>
+                        <p>A design system with spring-physics built into every transition, so motion feels like it has actual mass
+                            instead of just easing curves.</p>
+                        <div class="project-tags"><span class="pill">TypeScript</span><span class="pill">Framer Motion</span><span
+                                class="pill">Storybook</span></div>
+                    </div>
+                </article>
+            </div>
+            <p class="placeholder-note reveal">✎ A Note from Yuina: I Will add more in the future :)</p>
+        </div>
+    </section>
+
+    <!--- MY EXPERIENCE SECTION --->
+    <section id="experience">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="eyebrow">Path</span>
+                <h2>How I Got Here</h2>
+            </div>
+            <div class="timeline">
+                <div class="t-item reveal">
+                    <span class="eyebrow">Previous Job</span>
+                    <h3>2D/3D Digital Manga Artist</h3>
+                    <p>Adapts Static Black and white manga pages into Dynamic, moving animation. <em>(MAPPA)</em></p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="t-item reveal">
+                    <span class="eyebrow">Mid Career</span>
+                    <h3>Lead Developer </h3>
+                    <p>In an enterprise software team tasked with designing an ASP.NET core Project. <em>(COMPCOMP)</em></p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="t-item reveal">
+                    <span class="eyebrow">Mid Career</span>
+                    <h3>Senior Fullstack Developer</h3>
+                    <p><em>(COMPCOMP)</em></p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="t-item reveal">
+                    <span class="eyebrow">Mid Career</span>
+                    <h3>Junior Full Stack Developer</h3>
+                    <p>Took Products from prototype to production, owning both interface and the systems underneath it. <em>(COMPCOMP)</em></p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="t-item reveal">
+                    <span class="eyebrow">Early Career</span>
+                    <h3>Front End Developer</h3>
+                    <p>First Professional Role that set the foundation for everything after. <em>(COMPCOMP)</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--- MY CONTACT SECTION --->
+    <section id="contact" class="contact">
+        <div class="wrap contact-grid">
+            <div class="reveal">
+                <span class="eyebrow">Contact</span>
+                <h2 style="margin-top:10px; margin-bottom:18px;">Let's build something</h2>
+                <form id="contactForm">
+                    <div class="form-field">
+                        <label for="cf-name">Name</label>
+                        <input id="cf-name" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="cf-email">Email</label>
+                        <input id="cf-email" type="email" placeholder="you@email.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="cf-msg">Message</label>
+                        <textarea id="cf-msg" placeholder="Tell me what you're working on" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send message</button>
+                    <p class="form-note">Please input your correct email and I will reach out to you as soon as I can</p>
+                </form>
+            </div>
+            <div class="reveal social-col">
+                <h3>Elsewhere</h3>
+                <div class="social-list">
+                    <a href="https://github.com/ahneee" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+                    <!-- <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn <span
+                            class="arrow">↗</span></a>
+                    <a href="#" target="_blank" rel="noopener">Dribbble <span class="arrow">↗</span></a> -->
+                    <a href="mailto:yuinakada180@gmail.com">Email <span class="arrow">↗</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Designed &amp; Built By Yuina · <span class="heart">Art x Physics</span> · 2026
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
