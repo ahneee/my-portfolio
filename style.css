@@ -830,6 +830,10 @@ textarea {
     font-family: 'Space Mono', monospace;
 }
 
+.coffee{
+    margin-left: 4px;
+}
+
 @media (max-width: 760px) {
     .contact-grid {
         grid-template-columns: 1fr;
